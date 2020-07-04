@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/est.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="contenedorGneral">
+
+        <div class="contenedorGeneral">
+
+            <form action="../vista/ejemplo.phtml" method="post">
+            
+                <h1 class="usuario">Usuario</h1>
+                <input name="usuario" class="input" type="text"><br><br><br>
+                <h1 class="pass">Contraseña</h1>
+                <input name="contraseña" class="input" type="password"><br><br><br>
+
+                <input name="boton" class="BotonIngreso" id="boton" type="submit" value="Enviar">
+            
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+    <?php
+
+        require_once($contenido);
+
+    ?>
+    
+</body>
+</html>
