@@ -12,7 +12,7 @@
     function guardar_cursos($numero_curso,$nombre_curso,$id_nivel_curso,$id_jornada_curso){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO cursos(numero_curso,nombre_curso,id_nivel_curso,id_jornada_curso)";
         $sql.="VALUES ('$numero_curso','$nombre_curso','$id_nivel_curso','$id_jornada_curso');";
         $conexion->query($sql);

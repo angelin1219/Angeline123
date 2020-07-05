@@ -9,7 +9,7 @@
     function guardar_roles($nombre_rol){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO roles(nombre_rol)";
         $sql.="VALUES ('$nombre_rol');";
         $conexion->query($sql);

@@ -11,7 +11,7 @@
     function guardar_sedes($nombre_sedes,$direccion,$telefono){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO sedes(nombre_sedes,direccion,telefono)";
         $sql.="VALUES ('$nombre_sedes','$direccion','$telefono');";
         $conexion->query($sql);

@@ -11,7 +11,7 @@
     function guardar_ubicacion($nombre_ubicacion,$descripcion,$id_sede){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO ubicacion(nombre_ubicacion,descripcion,id_sede)";
         $sql.="VALUES ('$nombre_ubicacion','$descripcion','$id_sede');";
         $conexion->query($sql);

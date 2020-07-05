@@ -9,7 +9,7 @@
     function guardar_tipo_documento($nombre_tipo_documento){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO tipo_documento(nombre_tipo_documento)";
         $sql.="VALUES ('$nombre_tipo_documento');";
         $conexion->query($sql);

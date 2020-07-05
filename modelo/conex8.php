@@ -15,7 +15,7 @@
     function guardar_clientes($nombre_cliente,$id_tipo_documento,$documento,$email,$password,$id_rol,$telefono){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO clientes(nombre_cliente,id_tipo_documento,documento,email,password,id_rol,telefono)";
         $sql.="VALUES ('$nombre_cliente','$id_tipo_documento','$documento','$email','$password','$id_rol','$telefono');";
         $conexion->query($sql);

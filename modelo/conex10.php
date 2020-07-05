@@ -14,7 +14,7 @@
     function guardar_usuarios($nombre_usuario,$idtipo_documento,$documento,$idrol,$idestado,$idcurso){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO usuarios(nombre_usuario,idtipo_documento,documento,idrol,idestado,idcurso)";
         $sql.="VALUES ('$nombre_usuario','$idtipo_documento','$documento','$idrol','$idestado','$idcurso');";
         $conexion->query($sql);

@@ -9,7 +9,7 @@
     function guardar_nivel_curso($nombre_nivel){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO nivel_curso(nombre_nivel)";
         $sql.="VALUES ('$nombre_nivel');";
         $conexion->query($sql);

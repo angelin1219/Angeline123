@@ -9,7 +9,7 @@
     function guardar_jornada_curso($nombre_jornada){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO jornada_curso(nombre_jornada)";
         $sql.="VALUES ('$nombre_jornada');";
         $conexion->query($sql);

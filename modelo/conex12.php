@@ -12,7 +12,7 @@
     function guardar_bitacora_registro($id_usuario,$id_ubicacion,$id_estado,$fecha){
         $salida=0;
         
-        $conexion= mysqli_connect("localhost","root","toor","control_covid");
+        $conexion= mysqli_connect("localhost","root","toor","control_covid_2");
         $sql= "INSERT INTO bitacora_registro(id_usuario,id_ubicacion,id_estado,fecha)";
         $sql.="VALUES ('$id_usuario','$id_ubicacion','$id_estado','$fecha');";
         $conexion->query($sql);
