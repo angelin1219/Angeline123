@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="guardar_sedes.php">
-            *id_usuario<input type="text" name="id_usuario"><br><br>
-        *id_ubicacion<input type="text" name="id_ubicacion"><br><br>
-        *id_estado<input type="text" name="id_estado"><br><br>
-        *fecha<input type="text" name="fecha"><br><br>
-        <input type="submit" value="Guardar"><br><br>
+    <form action="../controlador/ejecucion.php" method="POST">
+        *nombre de la sedes <input type="text" name="nombre_sedes"><br><br>
+        *direccion <input type="text" name="direccion"><br><br>
+        *telefono <input type="text" name="telefono"><br><br>
+        <input name="Guardar" type="submit" value="Guardar"><br><br>
     </form>
+
+    <?php
+    require_once($contenido);
+    ?>
 </body>
 </html>
