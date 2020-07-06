@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../controlador/ejecucion10.php" method="POST">
+        *nombre del usuario <input type="text" name="nombre_usuario"><br><br>
+        *id del tipo del documento <input type="text" name="idtipo_documento"><br><br>
+        *documento <input type="text" name="documento"><br><br>
+        *id del rol <input type="text" name="idrol"><br><br>
+        *id del estado  <input type="text" name="idestado"><br><br>
+        *id del curso  <input type="text" name="idcurso"><br><br>
+        <input name="enviar7" type="submit" value="Guardar"><br><br>
+    </form>
+
+    <?php
+    require_once($contenido10);
+    ?>
+</body>
+</html>

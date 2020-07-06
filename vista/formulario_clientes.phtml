@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../controlador/ejecucion8.php" method="POST">
+        *nombre del cliente <input type="text" name="nombre_cliente"><br><br>
+        *id tipo del documento <input type="text" name="id_tipo_documento"><br><br>
+        *documento <input type="text" name="documento"><br><br>
+        *email <input type="text" name="email"><br><br>
+        *clave <input type="text" name="clave"><br><br>
+        *id del rol <input type="text" name="id_rol"><br><br>
+        *telefono <input type="text" name="telefono"><br><br>
+        <input name="enviar5" type="submit" value="Guardar"><br><br>
+    </form>
+
+    <?php
+    require_once($contenido8);
+    ?>
+</body>
+</html>

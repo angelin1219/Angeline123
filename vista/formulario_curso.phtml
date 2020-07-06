@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../controlador/ejecucion9.php" method="POST">
+        *numero del curso <input type="text" name="numero_curso"><br><br>
+        *nombre del curso <input type="text" name="nombre_curso"><br><br>
+        *id nivel del curso <input type="text" name="id_nivel_curso"><br><br>
+        *id jornada del curso <input type="text" name="id_jornada_curso"><br><br>
+        <input name="enviar6" type="submit" value="Guardar"><br><br>
+    </form>
+
+    <?php
+    require_once($contenido9);
+    ?>
+</body>
+</html>
